@@ -1,4 +1,4 @@
-package com.yuxh.blog_sync;
+package com.yuxh;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

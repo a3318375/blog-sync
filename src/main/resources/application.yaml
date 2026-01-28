@@ -1,3 +1,7 @@
 spring:
   application:
     name: blog-sync
+
+logging:
+  level:
+    org.springframework.web: DEBUG
