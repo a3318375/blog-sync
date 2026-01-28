@@ -29,7 +29,7 @@ jobs:
       - uses: mr-smithers-excellent/docker-build-push@v5
         name: 编译docker镜像
         with:
-          image: inyaa/blog-sync
+          image: a3318375/inyaa
           tags: latest
           registry: docker.io
           dockerfile: Dockerfile
@@ -46,4 +46,4 @@ jobs:
             docker stop blog-sync
             docker rm -f blog-sync
             docker rmi inyaa/blog-sync
-            docker run -d -p 8080:8080 --name blog-sync --network inyaw --network-alias blog-sync docker.io/inyaa/blog-sync:latest
+            docker run -d -p 8080:8080 --name blog-sync --network inyaw --network-alias blog-sync a3318375/inyaa:latest
